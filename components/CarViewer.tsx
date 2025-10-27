@@ -1,7 +1,9 @@
+
 import React, { Suspense, useRef, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF, OrbitControls, Stage, useAnimations } from '@react-three/drei';
 import * as THREE from 'three';
+import Loader from './Loader';
 
 interface ModelProps {
   url: string;
@@ -65,7 +67,7 @@ const CarViewer: React.FC<CarViewerProps> = ({ modelUrl }) => {
       dpr={[1, 2]}
       camera={{ fov: 45 }}
     >
-      <Suspense fallback={null}>
+      <Suspense fallback={<Loader />}>
         {/* 
           Stage provides a complete scene setup.
           - 'preset="rembrandt"' sets up a classic 3-point lighting rig.

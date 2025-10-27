@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BMWLogo, ContactIcon, SettingsIcon } from './icons';
+import { ContactIcon, SettingsIcon } from './icons';
 
 const NavLink: React.FC<{ children: React.ReactNode; isActive?: boolean }> = ({ children, isActive }) => (
   <a
@@ -17,7 +17,7 @@ const Header: React.FC = () => {
   return (
     <header className="w-full flex justify-between items-center z-20">
       <div className="flex items-center gap-8">
-        <BMWLogo className="w-10 h-10" />
+        <img src="https://i.imgur.com/Mgnt6Yw.png" alt="Car Brand Logo" className="w-10 h-10 object-contain" />
         <nav className="hidden md:flex items-center gap-2">
           <NavLink isActive>Models</NavLink>
           <NavLink>Services</NavLink>

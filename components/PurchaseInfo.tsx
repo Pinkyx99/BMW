@@ -1,4 +1,3 @@
-
 import React from 'react';
 import type { Car } from '../types';
 
@@ -21,9 +20,10 @@ const PurchaseInfo: React.FC<PurchaseInfoProps> = ({ car }) => {
   }
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-1 items-end text-right">
+      <p className="text-md font-medium text-gray-500 uppercase tracking-widest">Starting Price</p>
       <p className="text-5xl lg:text-6xl font-bold tracking-tighter">{formatCurrency(car.price).replace(',', '.')}</p>
-      <p className="text-md text-gray-500">{formatNumber(car.accessoriesPrice)} accessories</p>
+      <p className="text-sm text-gray-500 uppercase tracking-wide">+{formatNumber(car.accessoriesPrice)} in optional accessories</p>
     </div>
   );
 };
