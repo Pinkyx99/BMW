@@ -1,0 +1,5 @@
+{
+  "name": "3D Car Configurator",
+  "description": "An interactive 3D car showcase application inspired by a sleek, modern design. Users can view and rotate a detailed 3D model of a classic car, see its specifications, and view pricing information.",
+  "requestFramePermissions": []
+}
