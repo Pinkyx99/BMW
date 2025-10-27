@@ -1,4 +1,5 @@
-
+// Fix: All errors related to JSX elements from @react-three/fiber are resolved by adding a triple-slash directive to include the necessary type definitions.
+/// <reference types="@react-three/fiber" />
 import React, { Suspense, useRef, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF, OrbitControls, Stage, useAnimations } from '@react-three/drei';
