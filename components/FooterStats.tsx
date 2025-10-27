@@ -1,4 +1,3 @@
-
 import React from 'react';
 import type { Car } from '../types';
 import { ArrowUpIcon } from './icons';
@@ -11,8 +10,8 @@ interface FooterStatsProps {
 
 const StatItem: React.FC<{ label: string; value: string | number }> = ({ label, value }) => (
   <div className="text-center">
-    <p className="text-sm text-gray-600">{label}</p>
-    <p className="text-lg font-semibold">{value}</p>
+    <p className="text-sm text-gray-600 dark:text-gray-400">{label}</p>
+    <p className="text-lg font-semibold text-on-surface dark:text-on-surface-dark">{value}</p>
   </div>
 );
 
@@ -23,10 +22,10 @@ const FooterStats: React.FC<FooterStatsProps> = ({ car, isVisible, onToggle }) =
         isVisible ? 'translate-y-0' : 'translate-y-[calc(100%-4rem)]'
       }`}
     >
-      <div className="relative bg-white/50 backdrop-blur-lg p-6 rounded-t-3xl shadow-lg">
+      <div className="relative bg-white/50 dark:bg-black/50 backdrop-blur-lg p-6 rounded-t-3xl shadow-lg">
         <button
           onClick={onToggle}
-          className="absolute -top-5 right-5 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center shadow-md transition-transform hover:scale-110"
+          className="absolute -top-5 right-5 w-10 h-10 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full flex items-center justify-center shadow-md transition-transform hover:scale-110"
         >
           <ArrowUpIcon className={`w-5 h-5 transition-transform duration-300 ${isVisible ? '' : 'rotate-180'}`} />
         </button>

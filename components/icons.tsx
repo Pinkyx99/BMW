@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 type SVGProps = React.SVGProps<SVGSVGElement>;
@@ -24,6 +23,27 @@ export const SettingsIcon: React.FC<SVGProps> = (props) => (
         <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
     </svg>
 );
+
+export const SunIcon: React.FC<SVGProps> = (props) => (
+    <svg fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" {...props}>
+        <circle cx="12" cy="12" r="5" />
+        <path d="M12 1v2" />
+        <path d="M12 21v2" />
+        <path d="M4.22 4.22l1.42 1.42" />
+        <path d="M18.36 18.36l1.42 1.42" />
+        <path d="M1 12h2" />
+        <path d="M21 12h2" />
+        <path d="M4.22 19.78l1.42-1.42" />
+        <path d="M18.36 5.64l1.42-1.42" />
+    </svg>
+);
+
+export const MoonIcon: React.FC<SVGProps> = (props) => (
+    <svg fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" {...props}>
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+    </svg>
+);
+
 
 export const LightControls: React.FC<SVGProps> = (props) => (
     <svg fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" {...props}>
