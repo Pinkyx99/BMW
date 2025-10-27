@@ -50,6 +50,15 @@ const App: React.FC = () => {
           
         </main>
         <FooterStats car={currentCar} isVisible={isStatsVisible} onToggle={() => setIsStatsVisible(!isStatsVisible)} />
+        <a
+          href="https://www.instagram.com/site.builderhub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute bottom-4 right-8 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors z-30"
+          aria-label="Made by Ramill, opens Instagram profile in a new tab"
+        >
+          Made by Ramill
+        </a>
       </div>
     </div>
   );
